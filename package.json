@@ -1,0 +1,56 @@
+{
+  "_from": "hexo-deployer-cos-cdn@^1.1.1",
+  "_id": "hexo-deployer-cos-cdn@1.1.1",
+  "_inBundle": false,
+  "_integrity": "sha1-XO4RGtlhSXKY6gFZbBGdLl64Yk0=",
+  "_location": "/hexo-deployer-cos-cdn",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "hexo-deployer-cos-cdn@^1.1.1",
+    "name": "hexo-deployer-cos-cdn",
+    "escapedName": "hexo-deployer-cos-cdn",
+    "rawSpec": "^1.1.1",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "name": "hexo-deployer-cos-cdn",
+  "description": "Hexo部署插件，支持将静态博客发布到腾讯云对象存储中，并同步刷新被更新文件的CDN缓存。",
+  "homepage": "https://github.com/lxl80/hexo-deployer-cos-cdn#readme",
+  "main": "index",
+  "author": "悟尘 <me@lixl.cn> (http://lixl.cn)",
+  "bugs": {
+    "url": "https://github.com/lxl80/hexo-deployer-cos-cdn/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "cos-nodejs-sdk-v5": "^2.4.3",
+    "hexo-fs": "^0.2.2",
+    "lodash": "^4.17.2",
+    "request": "^2.79.0",
+    "utility": "^1.9.0"
+  },
+  "deprecated": false,
+  "keywords": [
+    "hexo",
+    "cdn",
+    "deploy",
+    "upload",
+    "cos"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxl80/hexo-deployer-cos-cdn.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.1"
+}
