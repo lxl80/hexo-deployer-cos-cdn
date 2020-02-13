@@ -108,9 +108,11 @@ deploy:
 - `type`： 固定填: cos
   
 - `bucket` 和 `region`： 腾讯云控制台 - 对象存储 - 存储桶列表 页面，存储桶名称即: `bucket` ，所属地域代号即: region，参照下图红框圈住的部分:
+  
   <img src='https://pic.lixl.cn/2020/20200208200709.png/w1280' alt='腾讯云存储桶列表' width='70%'>
 
 - `secretId` 和 `secretKey`：腾讯云控制台 - 访问管理 - 访问秘钥 - API秘钥管理，参照下图红框圈住的部分:
+  
   <img src='https://pic.lixl.cn/2020/20200208201510.png/w1280' alt='腾讯云API秘钥管理' width='70%'>
   
 - `cdnEnable`: 是否启用CDN加速，默认为 `true`，如果为 `false` ，将不会刷新 CDN 缓存。
