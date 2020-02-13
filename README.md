@@ -3,8 +3,11 @@
 Hexo部署插件，支持将静态博客发布到腾讯云对象存储中，并同步刷新被更新文件的CDN缓存。
 
 详见博文：[hexo-deployer-cos-cdn 插件安装使用指南](https://www.lixl.cn/2020/020936412.html)。按量付费，一般访问量不高的话，体验期过后一个月也花不了几块钱。
+<div align='center'>
+<img src='https://pic.lixl.cn/2020/20200212145243.png/w1280' width='70%'>
 
-<img src='https://pic.lixl.cn/2020/20200212145243.png/w1280' alt='hexo-deployer-cos-cdn 插件运行流程' width='70%'>
+hexo-deployer-cos-cdn 插件运行流程
+</div>
 
 ## 特点
 
@@ -26,7 +29,11 @@ Hexo部署插件，支持将静态博客发布到腾讯云对象存储中，并�
 
 推荐使用 [Typora](https://www.typora.io/) + 本插件 实现如上体验。`Typora` 配置参照下图：
 
-<img src='https://pic.lixl.cn/2020/20200209161415.png/w1280' alt='Typora图像配置' width='70%'>
+<div align='center'>
+<img src='https://pic.lixl.cn/2020/20200209161415.png/w1280' width='70%'>
+
+Typora图像配置
+</div>
 
 经过以上配置以后，在 `Typora` 中编辑 MarkDown 文档时，截图后直接 `Ctrl + v` 即可粘贴并实时预览图片。`hexo d` 部署以后，网站及图片会自动上传到腾讯云对象存储中。
 
@@ -109,11 +116,19 @@ deploy:
   
 - `bucket` 和 `region`： 腾讯云控制台 - 对象存储 - 存储桶列表 页面，存储桶名称即: `bucket` ，所属地域代号即: region，参照下图红框圈住的部分:
   
-  <img src='https://pic.lixl.cn/2020/20200208200709.png/w1280' alt='腾讯云存储桶列表' width='70%'>
+<div align='center'>
+<img src='https://pic.lixl.cn/2020/20200208200709.png/w1280' width='70%'>
+
+腾讯云存储桶列表
+</div>
 
 - `secretId` 和 `secretKey`：腾讯云控制台 - 访问管理 - 访问秘钥 - API秘钥管理，参照下图红框圈住的部分:
   
-  <img src='https://pic.lixl.cn/2020/20200208201510.png/w1280' alt='腾讯云API秘钥管理' width='70%'>
+<div align='center'>
+<img src='https://pic.lixl.cn/2020/20200208201510.png/w1280' width='70%'>
+
+腾讯云API秘钥管理
+</div>
   
 - `cdnEnable`: 是否启用CDN加速，默认为 `true`，如果为 `false` ，将不会刷新 CDN 缓存。
 
