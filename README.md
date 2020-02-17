@@ -8,7 +8,7 @@ Hexo部署插件，支持将静态博客发布到腾讯云对象存储中，并�
 
 hexo-deployer-cos-cdn 插件运行流程
 </div>
-
+![hexo-deployer-cos-cdn 插件运行流程](https://pic.lixl.cn/2020/20200212145243.png/w1280)
 ## 特点
 
 1. 编辑博文时，截图后直接 `Ctrl + v` 粘贴并实时预览。
