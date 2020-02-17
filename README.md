@@ -29,7 +29,11 @@ hexo-deployer-cos-cdn 插件运行流程
 
 推荐使用 [Typora](https://www.typora.io/) + 本插件 实现如上体验。`Typora` 配置参照下图：
 
+<div align='center'>
+<img src='https://pic.lixl.cn/2020/20200209161415.png/w1280' width='70%'>
 
+Typora图像配置
+</div>
 
 经过以上配置以后，在 `Typora` 中编辑 MarkDown 文档时，截图后直接 `Ctrl + v` 即可粘贴并实时预览图片。`hexo d` 部署以后，网站及图片会自动上传到腾讯云对象存储中。
 
