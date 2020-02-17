@@ -30,7 +30,7 @@ hexo-deployer-cos-cdn 插件运行流程
 推荐使用 [Typora](https://www.typora.io/) + 本插件 实现如上体验。`Typora` 配置参照下图：
 
 <div align='center'>
-<img src='https://pic.lixl.cn/2020/20200209161415.png/w1280' width='70%'>
+<img src='https://pic.lixl.cn/2020/20200209161415.png/w1440' width='70%'>
 
 Typora图像配置
 </div>
