@@ -88,7 +88,7 @@ deploy:
     ignore_hidden: false
   - type: cos
     bucket: blog-1234567890
-    region: ap-shanghai
+    region: ap-beijing
     secretId: AKIDIgxxxxxxxxxxxxxxxxxxxx0SepjX
     secretKey: qXPCbxxxxxxxxxxxxxxxxxxxxsJZfdR
     cdnEnable: true
@@ -97,7 +97,7 @@ deploy:
     imageConfig:
       cdnUrl: https://cdn.jsdelivr.net/gh/lxl80/blog@gh-pages/static
       bucket: static-1234567890
-      region: ap-shanghai
+      region: ap-beijing
       secretId: AKIDIgxxxxxxxxxxxxxxxxxxxx0SepjX
       secretKey: qXPCbxxxxxxxxxxxxxxxxxxxxsJZfdR
       folder: static
@@ -105,7 +105,7 @@ deploy:
       deleteExtraFiles: true
 ```
 
-如上配置，同步将网站发布到 Github Pages 及 COS 中；如果 bucket 中有多余文件，会删除；图片上传成功后，会将 Markdown 源文件中图片路径替换为 CDN 地址。
+如上配置，还安装了 git 部署插件 [hexo-deployer-git](https://www.npmjs.com/package/hexo-deployer-git)，会同步将网站发布到 Github Pages 及 COS 中；如果 bucket 中有多余文件，会删除；图片上传成功后，会将 Markdown 源文件中图片路径替换为 CDN 地址。
 请注意 `cdnUrl` 配置成了 [jsDelivr CDN](https://www.jsdelivr.com/) 加速，这样配置将实现基于免费的 jsDelivr CDN 来加速 Github 图床的效果，全球访问速度都很快。省去占网站流量大头的图片流量 CDN 加速成本。 详情可参见博文：[使用Typora + PicGo 图床 + jsDelivr CDN实现高效 Markdown 创作](https://www.lixl.cn/2019/120114500.html#toc-heading-6)。
 
 > 补充： jsDelivr是唯一具有中国政府颁发的有效ICP许可证的全球公共CDN，其直接在中国大陆设有数百个节点。

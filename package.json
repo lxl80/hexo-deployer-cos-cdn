@@ -1,27 +1,8 @@
 {
-  "_from": "hexo-deployer-cos-cdn@^1.1.1",
-  "_id": "hexo-deployer-cos-cdn@1.1.1",
-  "_inBundle": false,
-  "_integrity": "sha1-XO4RGtlhSXKY6gFZbBGdLl64Yk0=",
-  "_location": "/hexo-deployer-cos-cdn",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "hexo-deployer-cos-cdn@^1.1.1",
-    "name": "hexo-deployer-cos-cdn",
-    "escapedName": "hexo-deployer-cos-cdn",
-    "rawSpec": "^1.1.1",
-    "saveSpec": null,
-    "fetchSpec": "^1.1.1"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
   "name": "hexo-deployer-cos-cdn",
+  "version": "1.1.2",
   "description": "Hexo部署插件，支持将静态博客发布到腾讯云对象存储中，并同步刷新被更新文件的CDN缓存。",
-  "homepage": "https://github.com/lxl80/hexo-deployer-cos-cdn#readme",
+  "homepage": "https://www.lixl.cn/2020/020936412.html",
   "main": "index",
   "author": "悟尘 <me@lixl.cn> (http://lixl.cn)",
   "bugs": {
@@ -51,6 +32,5 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.1.1"
+  }
 }
