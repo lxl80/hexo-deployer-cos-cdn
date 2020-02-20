@@ -1,7 +1,7 @@
 {
   "name": "hexo-deployer-cos-cdn",
-  "version": "1.1.2",
-  "description": "Hexo部署插件，支持将静态博客发布到腾讯云对象存储中，并同步刷新被更新文件的CDN缓存。",
+  "version": "1.6.2",
+  "description": "Hexo部署插件，支持将静态博客发布到腾讯云、阿里云对象存储中，并同步刷新被更新文件的CDN缓存。",
   "homepage": "https://www.lixl.cn/2020/020936412.html",
   "main": "index",
   "author": "悟尘 <me@lixl.cn> (http://lixl.cn)",
@@ -10,6 +10,8 @@
   },
   "bundleDependencies": false,
   "dependencies": {
+    "ali-oss": "^6.5.1",
+    "@alicloud/pop-core": "1.7.9",
     "chalk": "^2.3.0",
     "cos-nodejs-sdk-v5": "^2.4.3",
     "hexo-fs": "^0.2.2",
@@ -20,10 +22,13 @@
   "deprecated": false,
   "keywords": [
     "hexo",
-    "cdn",
     "deploy",
     "upload",
-    "cos"
+    "cdn",
+    "tencent",
+    "cos",
+    "aliyun",
+    "oss"
   ],
   "license": "MIT",
   "repository": {
