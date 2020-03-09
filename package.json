@@ -1,6 +1,6 @@
 {
   "name": "hexo-deployer-cos-cdn",
-  "version": "1.6.3",
+  "version": "1.6.7",
   "description": "Deploy Hexo to Aliyun OSS, Tencent COS, etc. and purge the CDN cache. | Hexo部署插件，支持将静态博客发布到腾讯、阿里等云对象存储中，并同步刷新被更新文件的CDN缓存。",
   "homepage": "https://www.lixl.cn/2020/020936412.html",
   "main": "index",
@@ -28,7 +28,8 @@
     "tencent",
     "cos",
     "aliyun",
-    "oss"
+    "oss",
+    "netlify"
   ],
   "license": "MIT",
   "repository": {

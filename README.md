@@ -3,11 +3,8 @@
 Hexo部署插件，支持将静态博客发布到腾讯云、阿里云对象存储中，并同步刷新被更新文件的CDN缓存。
 
 详见博文：[hexo-deployer-cos-cdn 插件安装使用指南](https://www.lixl.cn/2020/020936412.html)。按量付费，一般访问量不高的话，体验期过后一个月也花不了几块钱。
-<div align='center'>
-<img src='https://pic.lixl.cn/2020/20200212145243.png/w1280' width='70%'>
 
-hexo-deployer-cos-cdn 插件运行流程
-</div>
+![hexo-deployer-cos-cdn 插件运行流程](https://pic.lixl.cn/2020/20200212145243.png/w1280)
 
 ## 特点
 
@@ -28,11 +25,7 @@ hexo-deployer-cos-cdn 插件运行流程
 
 推荐使用 [Typora](https://www.typora.io/) + 本插件 实现如上体验。`Typora` 配置参照下图：
 
-<div align='center'>
-<img src='https://pic.lixl.cn/2020/20200209161415.png/w1440' width='70%'>
-
-Typora图像配置
-</div>
+![Typora图像配置](https://pic.lixl.cn/2020/20200209161415.png/w1440)
 
 经过以上配置以后，在 `Typora` 中编辑 MarkDown 文档时，截图后直接 `Ctrl + v` 即可粘贴并实时预览。尤其是一键粘贴包括多张图片及文本的混合内容，并保留原格式非常方便。`hexo d` 部署以后，网站及图片会自动上传到云对象存储中。
 
@@ -82,7 +75,7 @@ deploy:
 
 如上配置，文件将发布到 腾讯云 的 bucket 中，图片发布到阿里云的 bucket 中。图片使用单独的 CDN 加速域名。图片cdn没有开启CDN换新及删除多余文件功能。
 
-### 与其它部署插件共存
+### 免备案部署
 
 ```yaml
 deploy:
@@ -113,7 +106,11 @@ deploy:
 
 如上配置，需要安装 [hexo-deployer-git](https://www.npmjs.com/package/hexo-deployer-git) 插件。会同步将网站发布到 Github Pages 及 云对象存储 中；如果 bucket 中有多余文件会删除；图片上传成功后，会将 Markdown 源文件中图片路径替换为 CDN 地址。
 
-请注意 `cdnUrl` 配置成了 [jsDelivr CDN](https://www.jsdelivr.com/) 加速，图片在阿里云OSS中只保存备份，用户访问到的是基于免费的 jsDelivr CDN 来加速 Github 图床的效果，全球访问速度都很快，省去占网站流量大头的图片流量 CDN 加速成本。 详情可参见博文：[使用Typora + PicGo 图床 + jsDelivr CDN实现高效 Markdown 创作](https://www.lixl.cn/2019/120114500.html#toc-heading-6)。
+如果嫌 `Github Pages` 国内访问导致html页面加载太慢，可以通过 [netlify](https://app.netlify.com/) 来提速。在 netlify 中基于 git 创建站点，关联 github 仓库，以后通过 `hexo g -d`一键部署时，netlify 中的内容也会自动更新。示例站点: <https://netlify.lixl.cn/>
+
+![基于Github仓库创建站点](https://netlify.lixl.cn/static/2020/image-20200309142734992.png)
+
+请注意配置示例的 `cdnUrl` 配置成了 [jsDelivr CDN](https://www.jsdelivr.com/) 加速，图片在阿里云OSS中只保存备份，用户访问到的是基于免费的 jsDelivr CDN 来加速 Github 图床的效果，全球访问速度都很快，省去占网站流量大头的图片流量 CDN 加速成本。 详情可参见博文：[使用Typora + PicGo 图床 + jsDelivr CDN实现高效 Markdown 创作](https://www.lixl.cn/2019/120114500.html#toc-heading-6)。
 
 > 补充： jsDelivr是唯一具有中国政府颁发的有效ICP许可证的全球公共CDN，其直接在中国大陆设有数百个节点。
 
@@ -125,20 +122,12 @@ deploy:
   
 - `bucket` 和 `region`： 以腾讯云为例，进入控制台 - 对象存储 - 存储桶列表 页面，存储桶名称即: `bucket` ，所属地域代号即: region，参照下图红框圈住的部分:
   
-<div align='center'>
-<img src='https://pic.lixl.cn/2020/20200208200709.png/w1280' width='70%'>
-
-腾讯云存储桶列表
-</div>
+![腾讯云存储桶列表](https://pic.lixl.cn/2020/20200208200709.png/w1280)
 
 - `secretId` 和 `secretKey`：以腾讯云为例，进入控制台 - 访问管理 - 访问秘钥 - API秘钥管理，参照下图红框圈住的部分:
-  
-<div align='center'>
-<img src='https://pic.lixl.cn/2020/20200208201510.png/w1280' width='70%'>
 
-腾讯云API秘钥管理
-</div>
-  
+![腾讯云API秘钥管理](https://pic.lixl.cn/2020/20200208201510.png/w1280)
+
 - `cdnEnable`: 是否启用CDN加速，默认为 `true`，如果为 `false` ，将不会刷新 CDN 缓存。
 
 - `deleteExtraFiles`: 是否删除云端多余文件(本地不包含的文件)，默认为 `false`，请谨慎选择。
