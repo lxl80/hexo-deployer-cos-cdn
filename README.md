@@ -108,9 +108,9 @@ deploy:
 
 如果嫌 `Github Pages` 国内访问导致html页面加载太慢，可以通过 [netlify](https://app.netlify.com/) 来提速。在 netlify 中基于 git 创建站点，关联 github 仓库，以后通过 `hexo g -d`一键部署时，netlify 中的内容也会自动更新。示例站点: <https://netlify.lixl.cn/>
 
-![基于Github仓库创建站点](https://netlify.lixl.cn/static/2020/image-20200309142734992.png)
+![基于Github仓库创建站点](https://pic.lixl.cn/2020/image-20200309142734992.png)
 
-请注意配置示例的 `cdnUrl` 配置成了 [jsDelivr CDN](https://www.jsdelivr.com/) 加速，图片在阿里云OSS中只保存备份，用户访问到的是基于免费的 jsDelivr CDN 来加速 Github 图床的效果，全球访问速度都很快，省去占网站流量大头的图片流量 CDN 加速成本。 详情可参见博文：[使用Typora + PicGo 图床 + jsDelivr CDN实现高效 Markdown 创作](https://www.lixl.cn/2019/120114500.html#toc-heading-6)。
+也可以使用请免费的 [jsDelivr CDN](https://www.jsdelivr.com/) 来加速，如上面示例的 `cdnUrl` 配置成了 jsDelivr CDN 加速地址，这样配置的话，图片在阿里云OSS中只保存备份，用户访问的是基于免费的 jsDelivr CDN 来加速 Github 图床的效果，全球访问速度都很快，还省去了占网站流量大头的图片流量 CDN 加速成本。 详情可参见博文：[使用Typora + PicGo 图床 + jsDelivr CDN实现高效 Markdown 创作](https://www.lixl.cn/2019/120114500.html#toc-heading-6)。
 
 > 补充： jsDelivr是唯一具有中国政府颁发的有效ICP许可证的全球公共CDN，其直接在中国大陆设有数百个节点。
 
