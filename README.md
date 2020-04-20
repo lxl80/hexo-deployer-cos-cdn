@@ -61,6 +61,7 @@ deploy:
   region: ap-shanghai
   secretId: AKIDIgxxxxxxxxxxxxxxxxxxxx0SepjX
   secretKey: qXPCbxxxxxxxxxxxxxxxxxxxxsJZfdR
+  needIndex: false # CDN 刷新时, 页面是否需要 index.html, 默认不需要
   imageConfig:
     cloud: aliyun
     cdnUrl: https://pic.lixl.cn
