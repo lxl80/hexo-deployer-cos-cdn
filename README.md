@@ -147,7 +147,7 @@ deploy:
 
 ## 贡献者
 
-- 感谢 @Doradx 发现 CDN 刷新存在的问题并提供解决方案。
+- 感谢 [@Doradx](https://github.com/Doradx) 发现 CDN 刷新存在的问题并提供解决方案。
 
 ## License
 
