@@ -2,7 +2,7 @@
 
 Hexo部署插件，支持将静态博客发布到腾讯云、阿里云对象存储中，并同步刷新被更新文件的CDN缓存。
 
-详见博文：[hexo-deployer-cos-cdn 插件安装使用指南](https://www.lixl.cn/2020/020936412.html)。按量付费，一般访问量不高的话，体验期过后一个月也花不了几块钱。
+详见博文：[hexo-deployer-cos-cdn 插件安装使用指南](https://www.lixl.cn/2020/020936412.html)。
 
 ![hexo-deployer-cos-cdn 插件运行流程](https://pic.lixl.cn/2020/20200212145243.png/w1280)
 
@@ -61,7 +61,6 @@ deploy:
   region: ap-shanghai
   secretId: AKIDIgxxxxxxxxxxxxxxxxxxxx0SepjX
   secretKey: qXPCbxxxxxxxxxxxxxxxxxxxxsJZfdR
-  needIndex: false # CDN 刷新时, 页面是否需要 index.html, 默认不需要
   imageConfig:
     cloud: aliyun
     cdnUrl: https://pic.lixl.cn
@@ -145,6 +144,10 @@ deploy:
 2. 超出免费额度要付费，记得开启防盗链。
 3. 更新 CDN 缓存需要授权，如果使用子账号，请同时赋予该账号此权限。
 4. 如果想将 markdown 源文直接导入/粘贴到第三方平台，记得在图片 CDN 防盗链配置中增加白名单。
+
+## 贡献者
+
+- 感谢 @Doradx 发现 CDN 刷新存在的问题并提供解决方案。
 
 ## License
 
