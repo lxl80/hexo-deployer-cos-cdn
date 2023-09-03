@@ -90,6 +90,7 @@ deploy:
     cdnEnable: true
     deleteExtraFiles: true
     updatePosts: true
+    useAccelerate: true
     secretId: AKIDIgxxxxxxxxxxxxxxxxxxxx0SepjX
     secretKey: qXPCbxxxxxxxxxxxxxxxxxxxxsJZfdR
     imageConfig:
@@ -129,6 +130,8 @@ deploy:
 ![腾讯云API秘钥管理](https://pic.lixl.cn/2020/20200208201510.png/w1280)
 
 - `cdnEnable`: 是否启用CDN加速，默认为 `true`，如果为 `false` ，将不会刷新 CDN 缓存。
+
+- `useAccelerate`: 是否启用全球加速，提升COS上传速度。
 
 - `deleteExtraFiles`: 是否删除云端多余文件(本地不包含的文件)，默认为 `false`，请谨慎选择。
 
