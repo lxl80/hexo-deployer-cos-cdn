@@ -17,6 +17,7 @@
     "hexo-fs": "^0.2.2",
     "lodash": "^4.17.2",
     "request": "^2.79.0",
+    "tencentcloud-sdk-nodejs": "^4.0.805",
     "utility": "^1.9.0"
   },
   "deprecated": false,
